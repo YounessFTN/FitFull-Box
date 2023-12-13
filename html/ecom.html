@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The FitFull Shop</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/e-commerce.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="icon" type="image/png" href="../assets/logobleu.jpg">
+</head>
+<body>
+
+	<header>
+		<div class="nav1">
+		<nav>
+			<ul>
+				<li>
+					<a href="aboutus.html" >About us</a>
+				</li>
+				
+				<li>
+					<a href="ecom.html">Shop</a>
+				</li>
+
+				<li >
+					<a href="index.html" > <img style="width: 6%;" src="../assets/logo.png" alt=""></a>
+				</li>
+
+				<li>
+					<a href="login.html"> login</a>
+				</li>
+
+				
+				<li>
+					<a href="#"  id="cart-link"> <img style="width: 20px;" src="../assets/panier.png" alt="Panier"  id="cart-icon"> <span id="cart-count">0</span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+		<div class="nav2">
+			<nav>
+				<ul>
+					<li >
+						<a href="index.html" > <img style="width: 1em;" src="../assets/logo.png" alt=""></a>
+					</li>
+					<li>
+						<a href="#"  id="cart-link"> <img style="width: 20px;" src="../assets/panier.png" alt="Panier"  id="cart-icon"> <span id="cart-count">0</span></a>
+					</li>
+					
+					<li>
+						<a href="#" id="openModal"> <img style="width: 1em;" src="../assets/menu.png" alt=""></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span id="closeModal" class="close">&times;</span>
+					<!-- Votre menu de navigation ici -->
+					<div class="nav3">
+
+						<a href="aboutus.html" >ABOUT US</a>
+						<a href="ecom.html">SHOP</a>
+						<a href="login.html"> LOGIN</a>
+					</div>
+			</div>
+		</div>
+    </header>
+
+
+				
+<div id="cart-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close-button">
+    <img src="../assets/cancel.png" alt="Fermer" style="height:20px; width:20px;">
+</span>
+    <h2>Your Basket</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">0€</span> </p>
+	<button id="checkout-button">
+		<img src="../assets/shopping.png" alt="Image" style="height:20px; width:20px; vertical-align: middle;"></button>
+  </div>
+</div>
+	<header>
+	    <div id="scrolling-words">
+        <div id="ticker">
+            <div id="text-container">
+                <span>Texte défilant 1   Texte défilant 2   Texte défilant 3   Texte défilant 4   Texte défilant 5</span>
+            </div>
+        </div>
+    </div>
+	
+	</header>
+<main>
+      
+	  
+<div class="products">
+  <div class="product">
+     <img src="../image/starting-box.jpeg" alt="Produit 1">
+      <h2>The Starting Box  </h2>
+      <p>This kit includes all the essentials needed for those beginning their fitness journey</p>
+	  <ol class="info-product">
+		<li>Nike bag</li>
+		<li>Weight training gloves</li>
+		<li>Sports Towel</li>
+		<li>Impact Whey Protein</li>
+		<li>Peanut Butter</li>
+	  </ol>
+	  
+	    <p class="price">59.99€</p>
+	    <button class="add-to-cart" data-price="20">Add to Cart</button>
+		<div class="star-rating">
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">130</span>
+		</div>
+
+
+  </div>
+  <div class="product">
+     <img src="../image/box-november.jpeg" alt="Produit 1">
+      <h2>The Monthly Box</h2>
+      <p>This package features a curated selection of the most popular and trendy fitness products of the month.</p>
+	  <ol class="info-product">
+		<li>Impact Whey Protein Chocolate</li>
+		<li>Powdered Peanut Butter</li>
+		<li>Layered Protein Bar</li>
+		<li>BCAA Energy Drink (6 Pack)</li>
+		<li>Nike HyperFuel Water Bottle</li>
+	  </ol>
+	  <p class="price">49.99€</p>
+	    <button class="add-to-cart" data-price="50">Add to Cart</button>
+		<div class="star-rating">
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">430</span>
+		</div>
+
+
+  </div>
+  <div class="product">
+     <img src="../image/essential-box.jpeg" alt="Produit 1">
+      <h2> The Essential Box</h2>
+      <p>This collection comprises staple items that are typically part of a regular fitness routine.</p>
+	  <ol class="info-product">
+		<li>Impact Whey Protein</li>
+		<li>Peanut Butter</li>
+		<li>Oat Flakes</li>
+		<li>Protein Snack</li>
+	  </ol>
+	  <p class="price">29.99€</p>
+	    <button class="add-to-cart" data-price="100">Add to Cart</button>
+		<div class="star-rating">
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">&#9733;</span>
+			<span class="star">230</span>
+		</div>
+
+  </div>
+</div>
+
+  
+ 
+</main>
+
+<footer>
+	<div class="footer1">
+		<div id="box-footer" class="Delivery-methods">
+			<h2>Delivery methods</h2>
+			<a href="#"> <img src="../image/chronopost.png" alt=""></a> 
+			<a href="#"> <img src="../image/colissimo.png" alt=""></a> 
+
+		</div>
+
+
+		<div id="box-footer" class="Means-of-payment">
+			<h2>Means of payment</h2>
+
+				<a href="#"> <img src="../image/visa.png" alt=""></a> 
+				<a href="#"> <img src="../image/master.png" alt=""></a> 
+				<a href="#"> <img src="../image/PayPal.png" alt=""></a> 
+				<a href="#"> <img src="../image/klarna.png" alt=""></a> 
+
+		</div>
+
+		<div id="box-footer" class="our-networks">
+			<h2>our networks</h2>
+				<a href="#"> <img src="../image/Facebook.png" alt=""></a> 
+				<a href="#"> <img src="../image/insta.png" alt=""></a> 
+				<a href="#"> <img src="../image/x.png" alt=""></a> 
+				<a href="#"> <img src="../image/linkedin.png" alt=""></a> 
+		</div>
+	</div>
+	<div class="footer2">
+		<ul >
+			<li>Cookie Settings</li>
+			<li>Data Settings</li>
+			<li>Privacy Centre</li>
+			<li>Cookies</li>
+			<li>Privacy Notice</li>
+			<li>Terms and Conditions</li>
+		</ul>
+
+		<ul>
+			<li> Ireland</li>
+			<li> © 2023 FitFullBox, Inc. All Rights Reserved</li>
+		</ul>
+
+	</div>
+
+	</footer>
+
+
+<script src="../js/e-commerce.js"></script>
+</body>
+</html>

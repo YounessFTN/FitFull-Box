@@ -1,0 +1,563 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&display=swap);
+
+html {
+  height:100%;
+  background: linear-gradient(45deg, #04364A, #64CCC5);
+}
+body{
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#scrolling-words {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, #DAFFFB, #64CCC5);
+
+  color: black;
+}
+
+#ticker {
+  overflow: hidden;
+}
+
+#text-container {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+
+nav {
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: Opx 0;
+  position:fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+  width: 100%;
+  transition: all 0.35s; 
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  transition: all 0.35s;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all 0.35s;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform:uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.35s;
+
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.35s;
+
+
+}
+
+.h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3em;
+  text-align: left;
+  margin-left: 0%;
+  
+}
+.h1 p{
+  font-size: 70%;
+  color: #DAFFFB;
+  
+}
+
+.img iframe{
+  border: none;
+}
+
+.img{
+
+  height: 50%;
+  width: 50%;
+  /* width: ; */
+
+
+}
+/* .img img{
+  width: 50%;
+} */
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  gap: 0%;
+  height: 57.5em;
+  width: 100%;
+}
+.f{
+  color: #DAFFFB;
+  text-shadow: 0 0 5px #DAFFFB,
+  0 0 25px #DAFFFB,
+  0 0 50px #DAFFFB,
+  0 0 100px #DAFFFB;
+  transition: all 0.50s;
+
+
+
+
+}
+
+.f:hover{
+  color: #64CCC5;
+  text-shadow: 0 0 5px #64CCC5,
+  0 0 25px #64CCC5,
+  0 0 50px #64CCC5,
+  0 0 100px #64CCC5;
+
+  transition: all 0.50s;
+  
+
+}
+.box{
+  transition: all 0.50s;
+
+}
+.box:hover{
+  color: #DAFFFB;
+  text-shadow: 0 0 5px #DAFFFB,
+  0 0 25px #DAFFFB,
+  0 0 50px #DAFFFB,
+  0 0 100px #DAFFFB;
+
+  transition: all 0.50s;
+
+}
+
+.marque ul {
+  margin: 0%;
+  padding: 0%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color:#04364A;
+
+}
+.marque{
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+
+  height: 4%;
+}
+
+.marque img{
+  width: 9%;
+  
+}
+
+.marque li {
+  display: inline;
+  margin-left: 4%;
+
+}
+
+.zoom :hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#box-produit :hover img {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+#box-produit img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+.boutton a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #DAFFFB;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.boutton a:hover {
+  background: #DAFFFB;
+  color: #04364A;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #DAFFFB,
+              0 0 25px #DAFFFB,
+              0 0 50px #DAFFFB,
+              0 0 100px #DAFFFB;
+}
+
+.boutton a span {
+  position: absolute;
+  display: block;
+}
+
+.boutton a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #DAFFFB);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.boutton a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #DAFFFB);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.boutton a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #DAFFFB);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.boutton a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #DAFFFB);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+.produit{
+  height: 20em;
+  margin-top: 0%;
+  padding-top: 3%;
+  font-size: 3em;
+  color: black;
+  text-align: center;
+
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, #04364A 98%);
+
+}
+.produit h2{
+  color: azure;
+}
+
+.produit-0{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+#box-produit{
+  background: linear-gradient(45deg, #176B87, #64CCC5);
+  width: 20%;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+#box-produit h2{
+  font-size: 0.8em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#box-produit p{
+  font-size: 0.5em;
+  padding-left: 14%;
+  padding-right: 14%;
+  color: white;
+
+}
+
+
+.produit-1 img{
+  width: 80%;
+  margin-top: 10%;
+}
+.produit-2 img{
+  margin-top: 10%;
+  width: 32%;
+}
+.produit-3 img{
+  margin-top: 10%;
+  width: 48%;
+
+}
+.produit-4 img{
+  margin-top: 10%;
+  width: 32%;
+}
+
+
+
+.footer1{
+  background-color: #04364A;
+  color: white;
+  display: flex;
+  gap: 30%;
+  padding: 2%;
+
+
+}
+
+.Means-of-payment img{
+  width: 19%;
+  margin-right: 2%;
+
+}
+
+.our-networks img{
+  width: 9%;
+  margin-right: 2%;
+
+}
+
+.Delivery-methods img{
+  width: 40%;
+  margin-right: 2%;
+
+}
+
+.footer2{
+  text-decoration: none;
+
+
+    background-color: black;
+    color: white;
+    padding: 2%;
+    justify-content: space-between;
+}
+.footer2 ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 2%;
+
+}
+.footer2 li{
+  float: left;
+  margin-left: 2%;
+  color: gray;
+}
+
+
+@media (max-width:1345px){
+  .img {
+    display: none;
+
+  }
+  #box-produit p {
+    font-size: 50%;
+    padding-left: 14%;
+    padding-right: 14%;
+    color: white;
+}
+#box-produit h2 {
+  font-size: 40%;
+}
+.produit h2{
+  font-size: 70%;
+}
+}
+
+
+@media (max-width:1021px){
+  #box-produit p {
+    display: none;
+
+}
+#box-produit {
+  height: auto;
+
+}
+.produit{
+  height: auto;
+}
+.produit-0 {
+  padding-bottom: 5%;
+}
+}
+@media (max-width:768px){
+  .nav1{
+    display: none;
+  }
+  nav ul {
+    text-align: right;
+  }
+  footer{
+    display: none;
+  }
+  .main{
+    height: 50em;
+  }
+  .h1{
+    margin-left: 8%;
+  }
+
+
+}
+@media (min-width:769px){
+  .nav2{
+    display: none;
+    text-align: none;
+  }
+
+
+}
+.modal {
+  display: none;
+  position: fixed;
+  right: -100%; /* Commence à droite de l'écran */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 104, 152, 0.765);
+  z-index: 1;
+  transition: right 0.5s; /* Animation pour glisser depuis la droite */
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 300px; /* Largeur maximale pour les smartphones */
+  padding: 20px;
+  color: #ffffff;
+
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav3{
+  padding-top: 30%;
+  text-align: center;
+}
+
+.nav3 a {
+  margin-top: 40%;
+  display: block;
+  color: #ffffff;
+  margin-left: 24%;
+  text-decoration: none;
+  width: 57%;
+  font-size: 199%;
+  font-weight: bold;
+  padding: 2%;
+
+
+}
+
+.nav3 a:active {
+  color: #04364A;
+  background-color: #ffffff96;
+  border-radius: 20px;
+  padding: 2%;
+}
+

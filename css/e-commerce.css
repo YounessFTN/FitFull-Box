@@ -1,0 +1,475 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&display=swap);
+
+* { /* Ajouté pour réinitialiser les marges et les paddings */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Assure que le padding et le border sont inclus dans la largeur/hauteur totale des éléments */
+}
+
+html {
+  height: 100%;
+  background: linear-gradient( #04364A, #64CCC5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: Opx 0;
+  /* position:fixed; */
+
+  width: 100%;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 40px;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  text-transform:uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+
+}
+
+.main h1 {
+  font-size: 6em;
+  text-align: left;
+}
+
+#scrolling-words {
+  text-align: center;
+  background: linear-gradient(45deg, #DAFFFB, #64CCC5);
+
+  color: black;
+}
+
+#ticker {
+  overflow: hidden;
+}
+
+#text-container {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+
+.main h1 {
+  font-size: 2.5em; /* Adjusted for better proportionality */
+  text-align: center; /* Centered for a better e-commerce page header */
+  color: #fff; /* Make sure the color contrasts well with the background */
+  margin: 1em 0; /* Added margin for spacing */
+}
+
+/* E-commerce specific styles */
+.products {
+  display: flex;
+  justify-content: space-between; /* Crée un espace entre les éléments */
+  align-items: flex-start; /* Aligner les éléments en haut */
+  padding: 20px; /* Marge autour de la zone de produit */
+  height: auto;
+  margin-bottom: 4%;
+}
+
+.product {
+  width: 30%; /* Largeur fixe pour les cartes de produit */
+  height: auto;
+  background-color: #04364A; /* Couleur de fond pour les cartes de produit */
+  background: rgba(53, 104, 152, 0.279);
+    -webkit-backdrop-filter: blur(var(--blur));
+    backdrop-filter: blur(var(--blur));
+    border-radius: 10px;
+    border: 1px solid #64CCC514;
+    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre douce pour la profondeur */
+  border-radius: 15px; /* Coins arrondis pour les cartes */
+  overflow: hidden; /* Cache le contenu débordant */
+  padding: 15px; /* Marge intérieure de la carte */
+  text-align: center; /* Centrage du texte à l'intérieur de la carte */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  
+}
+
+.product:hover {
+  transform: scale(1); /* Agrandit la carte de 5% */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
+}
+
+.product.dim {
+  opacity: 0.6; /* Diminue l'opacité pour "assombrir" la carte */
+  transition: opacity 0.3s ease; /* Transition en douceur pour l'opacité */
+}
+
+.product img {
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 15px; 
+  border-radius:15px ;
+
+}
+
+.product h2 {
+  font-size: 1.5em; /* Slightly larger font size for product titles */
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.product p {
+  font-size: 1em; /* Standard font size for description */
+  margin-bottom: 20px; /* Space between description and button */
+  
+}
+
+
+
+
+
+
+
+.add-to-cart {
+  background-color: #04364A; /* Button color */
+  color: #fff; /* Text color for buttons */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding inside the button */
+  text-transform: uppercase; /* Uppercase button text */
+  font-weight: bold; /* Bold font for the button */
+  cursor: pointer; /* Cursor to indicate button */
+  transition: background-color 0.3s;
+  border-radius: 16px;
+  transition: .5s;
+}
+.add-to-cart:hover{
+  transition: .5s;
+  background: #DAFFFB;
+  color: #04364A;
+  border-radius: 16px;
+  box-shadow: 0 0 5px #DAFFFB,
+              0 0 25px #DAFFFB,
+              0 0 50px #DAFFFB,
+              0 0 100px #DAFFFB;
+
+}
+
+
+.add-to-cart, .redirect-button {
+    display: block; /* Makes the element a block-level element */
+    width: 100%; /* Optional: Makes the button extend full width of the container */
+    margin: 10px 0; /* Adds margin to the top and bottom */
+    /* Other styling as needed */
+}
+
+/* Your existing .redirect-button styles */
+.redirect-button {
+  background-color: #04364A; /* Button color */
+  color: #fff; /* Text color for buttons */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding inside the button */
+  text-transform: uppercase; /* Uppercase button text */
+  font-weight: bold; /* Bold font for the button */
+  cursor: pointer; /* Cursor to indicate button */
+  transition: background-color 0.3s;
+  /* Other styling as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style pour la fenêtre modale */
+.modal {
+  display: none; /* Caché par défaut */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Fond légèrement sombre */
+   transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal-content {
+    border-radius: 15px; /* Coins moins arrondis pour un look plus moderne */
+    margin: 5% auto; /* Ajustement du centrage vertical */
+    padding: 40px; /* Plus d'espacement à l'intérieur */
+    border: 1px solid #ccc; /* Bordure plus fine et plus subtile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère */
+    width: 60%; /* Ajuster la largeur selon les besoins */
+    animation: zoom 0.5s;
+    background: rgba(53, 104, 152, 0.597);
+    -webkit-backdrop-filter: blur(var(--blur));
+    backdrop-filter: blur(var(--blur));
+    border-radius: 10px;
+    border: 1px solid #64CCC514;
+    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #DAFFFB;
+    height: auto;
+}
+#checkout-button{
+  background-color: #DAFFFB;
+  border: none;
+  border-radius: 6px;
+  padding: 2px;
+  margin-top: 4%;
+  transition: .5s;
+}
+
+#checkout-button:hover{
+  transition: .5s;
+background: #DAFFFB;
+color: #04364A;
+border-radius: 5px;
+box-shadow: 0 0 5px #DAFFFB,
+            0 0 25px #DAFFFB,
+            0 0 50px #DAFFFB,
+            0 0 100px #DAFFFB;
+}
+#checkout-button img{
+  padding: 2px;
+}
+
+.close-button {
+    float: right;
+    font-size: 20px; /* Taille légèrement réduite */
+    color: #aaa; /* Couleur plus subtile */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.close-button:hover {
+    color: #333; /* Changement de couleur au survol */
+    transform: scale(1.2); /* Effet de zoom plus subtil */
+}
+
+
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.footer1{
+  background-color: #04364A;
+  color: white;
+  display: flex;
+  gap: 30%;
+  padding: 2%;
+
+
+}
+
+.Means-of-payment img{
+  width: 19%;
+  margin-right: 2%;
+
+}
+
+.our-networks img{
+  width: 9%;
+  margin-right: 2%;
+
+}
+
+.Delivery-methods img{
+  width: 40%;
+  margin-right: 2%;
+
+}
+
+.footer2{
+  text-decoration: none;
+
+
+    background-color: black;
+    color: white;
+    padding: 2%;
+    justify-content: space-between;
+}
+.footer2 ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 2%;
+
+}
+.footer2 li{
+  float: left;
+  margin-left: 2%;
+  color: gray;
+}
+
+@media (max-width:768px){
+  .nav1{
+    display: none;
+  }
+  nav ul {
+    text-align: right;
+  }
+ 
+  footer{
+    display: none;
+  }
+  .main{
+    height: 50em;
+  }
+  .h1{
+    margin-left: 8%;
+  }
+}
+@media (min-width:769px){
+  .nav2{
+    display: none;
+    text-align: none;
+  }
+
+
+}
+
+
+.modal {
+  
+  display: none;
+  position: fixed;
+  right: -100%; /* Commence à droite de l'écran */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.749);
+  z-index: 1;
+  transition: right 0.5s; /* Animation pour glisser depuis la droite */
+}
+
+.modal-content {
+  margin-top: 20px;
+  position: relative;
+  width: 80%;
+  max-width: 300px; /* Largeur maximale pour les smartphones */
+  padding: 20px;
+  color: #ffffff;
+
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav3{
+  margin-top: 2%;
+  padding-top: 30%;
+  padding-bottom: 50%;
+
+  text-align: center;
+}
+
+.nav3 a {
+  margin-top: 40%;
+  display: block;
+  color: #ffffff;
+  margin-left: 24%;
+  text-decoration: none;
+  width: 57%;
+  font-size: 199%;
+  font-weight: bold;
+  padding: 2%;
+
+
+}
+
+.nav3 a:active {
+  color: #04364A;
+  background-color: #ffffff96;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+
+@media (max-width:1021px){
+  .product p{
+    display: none;
+    height: auto;
+  }
+  .product{
+    height: auto;
+
+  }
+}
+.star-rating {
+  font-size: 24px;
+  color: #ff0;
+}
+
+.star-rating .star {
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+  color: black; 
+}
+
+.info-product{
+  columns: 2;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 9%;
+}
+.info-product li{
+  text-align: left;
+  margin-top: 6%;
+  list-style-type: none;
+}
